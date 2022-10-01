@@ -1,0 +1,59 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+    --fuente: 'Outfit', sans-serif;
+}
+
+/* REINICIAR HTML */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*Eso es para poder utilizar los rem en el codigo css*/
+    box-sizing: border-box; /**Sirve para que el tamaño de una imagen se quede fija y no se agregue el tamaño de un padding, sose llegua a agregar**/
+    font-family: var(--fuente);
+    background-color: var(--lightGray);
+}
+*,*:before, *:after{ /*Tambien tiene que ver con lo del tamaño de la imagen*/
+    box-sizing: inherit;
+}
+
+/* CONSTANTES */
+img{
+    width: 100%;
+}
+
+/* ESTILO */
+.qr--con{
+    background-color: var(--white);
+    width: 30rem;
+    margin: 15vh auto;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.img--con img{
+    border-radius: 1.5rem;
+}
+.info--con{
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+.info--con h3{
+    font-size: 2rem;
+    color: var(--darkBlue);
+}
+.info--con p{
+    color: var(--grayishBlue);
+    font-size: 1.5rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
